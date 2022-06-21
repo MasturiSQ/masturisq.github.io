@@ -81,6 +81,8 @@ header h1 {
   color: black;
 }
 
+.btn { background-color: #2D31FA; color: white; }
+
 footer {
   margin-top: 230px;
   padding: 30px;

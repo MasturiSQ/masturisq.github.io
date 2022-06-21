@@ -170,20 +170,29 @@
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-6">
-					<form>
+					<div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+						<strong>Terima kasih Atas Pesan Anda</strong> Pesan anda saya diterima.
+						<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+					</div>
+					<form name="masturisq-contact-form">
 						<div class="mb-3">
 							<label for="name" class="form-label">Nama Lengkap :</label>
-							<input type="text" class="form-control" id="name" aria-describedby="name">
+							<input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
 						</div>
 						<div class="mb-3">
 							<label for="email" class="form-label">Email :</label>
-							<input type="email" class="form-control" id="email" aria-describedby="email">
+							<input type="email" class="form-control" id="email" aria-describedby="email" name="email">
 						</div>
 						<div class="mb-3">
 							<label for="Pesan" class="form-label">Pesan :</label>
-							<textarea name="" class="form-control" id="pesan" cols="50" rows="3"></textarea>
+							<textarea name="pesan" class="form-control" id="pesan" cols="50" rows="3"></textarea>
 						</div>
-						<button type="submit" class="btn btn-primary">Kirim</button>
+						<button type="submit" class="btn btn-kirim">Kirim</button>
+
+						<button class="btn btn-primary btn-loading d-none" type="button" disabled>
+							<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+							Loading...
+						</button>
 					</form>
 				</div>
 			</div>
@@ -211,6 +220,35 @@
 
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbxLKqCia6-TNwK1emKmzXd00d5bwJ_WM03yKtHDKlwXvanTpFe7mC4e0QBNZoWxNSJnfA/exec'
+		const form = document.forms['masturisq-contact-form']
+		const btnKirim = document.querySelector('.btn-kirim');
+		const btnLoading = document.querySelector('.btn-loading');
+		const myAlert =document.querySelector('.my-alert');
+
+	form.addEventListener('submit', e => {
+		e.preventDefault();
+		// Ketika tombol submit diklik
+		// Tampilan tombol loading, Hilangkan tombol kirim
+		btnLoading.classList.toggle('d-none');
+		btnKirim.classList.toggle('d-none');
+		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			.then(response => {
+				// Tampilan tombol kirim, Hilangkan tombol loading
+				btnLoading.classList.toggle('d-none');
+				btnKirim.classList.toggle('d-none');
+				// Tampilkan alert
+				myAlert.classList.toggle('d-none');
+				// Reset formnya
+				form.reset();
+				console.log('Success!', response);
+			})
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
 
 </body>
 </html>
