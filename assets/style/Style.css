@@ -1,4 +1,8 @@
-/* Fotpolio */
+/* PORTFOLIO */
+:root {
+  --animation: linear-gradient(90deg, maroon, #000080);
+}
+
 body {
   background: linear-gradient(100deg, lightcyan, skyBlue);
   padding: 0;
@@ -69,6 +73,59 @@ header h1 {
   margin: 200px auto 360px;
 }
 
+#skill {
+  width: 70%;
+  margin: 200px auto 360px;
+}
+
+p {
+  flex-grow: 1;
+}
+
+.skill {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.kotakhtml1 {
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+}
+
+.kotakhtml2 {
+  display: flex;
+  height: 30px;
+  border-radius: 40px;
+  border: 4px solid white;
+  box-shadow: 0 0 4px 5px rgba(0, 0, 0, .6), 0 0 11px 6px rgba(255, 255, 255, .6);
+}
+
+.item {
+  border-radius: 40px;
+  flex-basis: 55%;
+  background-image: var(--animation);
+  background-size: 300%;
+  animation: animation-skill 3s infinite alternate;
+}
+
+@keyframes animation-skill {
+  /* 0% {
+    flex-basis: 0%;
+  }
+  
+  100% {
+    flex-basis: 55%;
+  } */
+  
+  0% {
+      background-position: left;
+  }
+  100% {
+      background-position: right;
+  }
+}
+
 #sertifikat {
   padding: 30px;
   margin-bottom: 230px;
@@ -89,6 +146,7 @@ footer {
   background-color: #DFF6FF;
   border-top: 4px solid #051367;
 }
+
 footer a {
   margin: 5px 5px;
   text-decoration: none;
@@ -105,12 +163,12 @@ footer a {
   width: 25px;
   filter:drop-shadow( 2px 3px 1px rgba(0, 0, 0, .8));
 }
-/* Akhir Fotpolio */
+/* AKHIR PORTFOLIO */
 
 
 
 
-/* PENDAFTARA */
+/* PENDAFTARAN */
 
 /* .judul-daftar {
   text-align: center;
@@ -119,7 +177,7 @@ footer a {
   text-align: left;
 } */
 
-/* Akhir PENDAFTARA */
+/* AKHIR PENDAFTARAN */
 
 
 
@@ -129,7 +187,7 @@ footer a {
   text-align: center;
 } */
 
-/* Akhir LUPA PASSWORD */
+/* AKHIR LUPA PASSWORD */
 
 
 
