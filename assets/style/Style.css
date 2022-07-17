@@ -1,13 +1,17 @@
 /* PORTFOLIO */
 :root {
   --animation: linear-gradient(90deg, maroon, #000080);
+  --background: linear-gradient( 105.5deg,  rgba(31,212,248,1) 11%, rgba(218,15,183,1) 74.9% ); 
+  /* linear-gradient(100deg, lightcyan, skyBlue); */
 }
 
 body {
-  background: linear-gradient(100deg, lightcyan, skyBlue);
   padding: 0;
   margin: 0;
+  background-image: var(--background); 
   font-family: Arial, sans-serif;
+  background-size: 300%;
+  animation: animation-skill 20s infinite alternate;
 }
 
 section {padding-top: 5rem;}
@@ -70,12 +74,12 @@ header h1 {
 
 #about {
   width: 70%;
-  margin: 200px auto 360px;
+  margin: 168px auto 100px;
 }
 
 #skill {
   width: 70%;
-  margin: 200px auto 360px;
+  margin: 100px auto 150px;
 }
 
 p {
@@ -87,13 +91,13 @@ p {
   width: 100%;
 }
 
-.kotakhtml1 {
+.kotak1 {
   font-size: 15px;
   font-weight: 600;
   display: flex;
 }
 
-.kotakhtml2 {
+.kotak2 {
   display: flex;
   height: 30px;
   border-radius: 40px;
@@ -101,12 +105,42 @@ p {
   box-shadow: 0 0 4px 5px rgba(0, 0, 0, .6), 0 0 11px 6px rgba(255, 255, 255, .6);
 }
 
-.item {
+.item1 {
   border-radius: 40px;
   flex-basis: 55%;
   background-image: var(--animation);
   background-size: 300%;
   animation: animation-skill 3s infinite alternate;
+}
+
+.item2 {
+  border-radius: 40px;
+  flex-basis: 80%;
+  background-image: var(--animation);
+  background-size: 300%;
+  animation: animation-skill 3s infinite alternate;
+}
+
+.item3 {
+  border-radius: 40px;
+  flex-basis: 15%;
+  background-image: var(--animation);
+  background-size: 300%;
+  animation: animation-skill 3s infinite alternate;
+}
+
+.item4 {
+  border-radius: 40px;
+  flex-basis: 12%;
+  background-image: var(--animation);
+  background-size: 300%;
+  animation: animation-skill 3s infinite alternate;
+}
+
+.persen p {
+  text-align: end;
+  color: white;
+  margin-right: 7px;
 }
 
 @keyframes animation-skill {
@@ -140,15 +174,27 @@ p {
 
 .btn { background-color: #2D31FA; color: white; }
 
+#fotografer .row > * {
+  padding: 0;
+}
+
+.gallery-img {
+  width: 100%;
+}
+
+#contact {
+  margin-top: 100px;
+}
+
 footer {
   margin-top: 230px;
+  text-align: center;
   padding: 30px;
   background-color: #DFF6FF;
   border-top: 4px solid #051367;
 }
 
 footer a {
-  margin: 5px 5px;
   text-decoration: none;
 }
 
@@ -156,13 +202,12 @@ footer a {
 /* .huruf-password {
   Display: grid;
   Justify-content: center;
-} */
-
+}
 
 .logo {
   width: 25px;
   filter:drop-shadow( 2px 3px 1px rgba(0, 0, 0, .8));
-}
+} */
 /* AKHIR PORTFOLIO */
 
 
