@@ -10,8 +10,8 @@ body {
   margin: 0;
   background-image: var(--background); 
   font-family: Arial, sans-serif;
-  background-size: 300%;
-  animation: animation-skill 20s infinite alternate;
+  /* background-size: 300%; */
+  /* animation: animation-skill 20s infinite alternate; */
 }
 
 section {padding-top: 5rem;}
