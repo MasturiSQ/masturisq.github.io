@@ -46,5 +46,5 @@ form.addEventListener('submit', e => {
 })
 
 
-// const tamu = prompt('Siapa Nama Anda ?');
-// alert('Selamat Datang ' + tamu + ' Apa kabar Semoga Dalam Baik-Baik Saja Ya.');
+const tamu = prompt('Siapa Nama Anda ?');
+alert('Selamat Datang ' + tamu + ' Apa kabar Semoga Dalam Baik-Baik Saja Ya.');
