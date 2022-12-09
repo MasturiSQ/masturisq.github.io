@@ -1,10 +1,12 @@
 /* PORTFOLIO */
+
 :root {
   --animation: linear-gradient(90deg, maroon, #000080);
   --background: linear-gradient( 105.5deg,  rgba(31,212,248,1) 11%, rgba(218,15,183,1) 74.9% ); 
   /* linear-gradient(100deg, lightcyan, skyBlue); */
 }
 
+/* Awal Body */
 body {
   padding: 0;
   margin: 0;
@@ -17,11 +19,14 @@ body {
 section {padding-top: 5rem;}
 
 h2 {font-weight: bold;}
+/* Akhir Body */
 
+/* Awal Navbar */
 nav {
   background-color: #051367; 
   border-bottom: 4px solid #DFF6FF;
 }
+/* Akhir navbar */
 
 /* .close {
   position: absolute;
@@ -51,6 +56,7 @@ nav {
   background-color: rgba(0, 0, 0, .8);
 } */
 
+/* Awal Profil */
 header {
   padding: 30px;
   background-color: #2D31FA;
@@ -71,12 +77,16 @@ header h1 {
   margin-top: 30px;
   text-shadow: 2px 2px 2px black;
 }
+/* Akhir Profil */
 
+/* Awal About */
 #about {
   width: 70%;
   margin: 168px auto 100px;
 }
+/* Akhir About */
 
+/* Awal Skill */
 #skill {
   width: 70%;
   margin: 100px auto 150px;
@@ -90,7 +100,9 @@ p {
   margin-top: 30px;
   width: 100%;
 }
+/* Akhir Skill */
 
+/* Awal Sertifikat */
 #sertifikat {
   padding: 30px;
   margin-bottom: 230px;
@@ -104,7 +116,12 @@ p {
 }
 
 .btn { background-color: #2D31FA; color: white; }
+/* Akhir Sertifikat */
 
+/* Awal Project */
+
+
+/* Awal Fotografer */
 #fotografer .row > * {
   padding: 0;
 }
@@ -112,7 +129,9 @@ p {
 .gallery-img {
   width: 100%;
 }
+/* Akhir Fotografer */
 
+/* Awal Contact */
 #contact {
   margin-top: 100px;
 }
@@ -128,24 +147,11 @@ footer {
 footer a {
   text-decoration: none;
 }
-
-
-/* .huruf-password {
-  Display: grid;
-  Justify-content: center;
-}
-
-.logo {
-  width: 25px;
-  filter:drop-shadow( 2px 3px 1px rgba(0, 0, 0, .8));
-} */
-/* AKHIR PORTFOLIO */
+/* Akhir Contact */
 
 
 
-
-/* PENDAFTARAN */
-
+/* Awal Pendaftaran */
 /* .judul-daftar {
   text-align: center;
 }
@@ -158,17 +164,14 @@ footer a {
 
 
 /* LUPA PASSWORD */
-
 /* .judul-lupa {
   text-align: center;
 } */
-
 /* AKHIR LUPA PASSWORD */
 
 
 
 /* GANTI PASSWORD */
-
 /* .judul-ganti {
   text-align: center;
 }
@@ -183,5 +186,4 @@ body {
   background: linear-gradient(100deg, gray, white);
   padding: auto;
 } */
-
 /* Akhir GANTI PASSWORD */
